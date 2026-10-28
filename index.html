@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacena Production × Lucatoni | Média Sportif, Production & Live</title>
-    <meta name="description" content="Hacena Production & Lucatoni (@lucatonitv). Agence de production audiovisuelle, créateur de contenu sportif, Tour de France du District, stades de Ligue 1 & documentaires cinéma à Bordeaux.">
+    <title>Hacena Production | Société de Production Audiovisuelle & Captation Live 4K</title>
+    <meta name="description" content="Société de production audiovisuelle professionnelle à Bordeaux. Captation 4K, multicaméra, retransmission live & différé, commentaire d'événements sportifs (football, rugby, basket) et institutionnels.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -42,31 +42,34 @@
 
     <style>
         body {
-            background-color: #050505;
-            color: #ffffff;
+            background-color: #020504;
+            color: #f3f4f6;
             overflow-x: hidden;
         }
-        .bg-hero-mesh {
-            background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.22) 0%, rgba(6, 78, 59, 0.1) 40%, #050505 80%);
+        .bg-wave-da {
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.2) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(5, 150, 105, 0.15) 0%, transparent 50%),
+                linear-gradient(135deg, #020504 0%, #051d14 50%, #010a06 100%);
+            background-attachment: fixed;
+        }
+        .wave-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.345 41.529 10 50 10c8.47 0 16.359 5.345 25.96 8.937l1.768.661c.368.138.73.272 1.088.402H21.184zM0 10c8.47 0 16.359 5.345 25.96 8.937l1.768.661c.357.13.72.264 1.088.402H2.156C1.442 19.34.75 18.68 0 18V10zm100 0c-.75.68-1.442 1.34-2.156 1.937h-26.75c.358-.138.72-.272 1.088-.402l1.768-.661C83.64 15.345 91.529 10 100 10z' fill='%2310b981' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
         .glass-card {
-            background: rgba(18, 24, 22, 0.65);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(16, 185, 129, 0.18);
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            background: rgba(8, 20, 14, 0.78);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .glass-card:hover {
-            border-color: rgba(16, 185, 129, 0.5);
+            border-color: rgba(16, 185, 129, 0.65);
             transform: translateY(-4px);
-            box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.15);
+            box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.2);
         }
         .text-glow {
-            text-shadow: 0 0 30px rgba(16, 185, 129, 0.35);
-        }
-        .grid-pattern {
-            background-image: radial-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 1px);
-            background-size: 28px 28px;
+            text-shadow: 0 0 35px rgba(16, 185, 129, 0.45);
         }
         @keyframes marquee {
             0% { transform: translateX(0%); }
@@ -75,644 +78,416 @@
         .animate-marquee {
             display: flex;
             width: max-content;
-            animation: marquee 30s linear infinite;
+            animation: marquee 35s linear infinite;
         }
         .animate-marquee:hover {
             animation-play-state: paused;
         }
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-track { background: #020504; }
         ::-webkit-scrollbar-thumb { background: #064e3b; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #10b981; }
     </style>
 </head>
-<body class="antialiased selection:bg-emerald-500 selection:text-black">
+<body class="antialiased selection:bg-emerald-500 selection:text-black wave-pattern">
 
-    <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="bg-emerald-950/90 border-b border-emerald-500/20 text-emerald-300 text-xs py-2.5 px-4 text-center font-medium relative z-50">
+    <!-- TOP BAR -->
+    <div class="bg-emerald-950 border-b border-emerald-500/30 text-emerald-300 text-xs py-2.5 px-4 text-center font-medium relative z-50">
         <span class="inline-flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <strong>NOUVELLE SAISON :</strong> Le Tour de France s'ouvre à tous les sports (Foot, Rugby, Pétanque). 
-            <a href="#inviter" class="underline font-bold text-white hover:text-emerald-400 ml-1">Invitez-nous dans votre club &rarr;</a>
+            <strong>PÔLE B2B & ENTREPRISES :</strong> Captation 4K, Multicaméra & Retransmission Live pour Clubs & Entreprises.
+            <a href="#configurateur" class="underline font-bold text-white hover:text-emerald-400 ml-1">Simuler un devis en 1 min &rarr;</a>
         </span>
     </div>
 
     <!-- NAVBAR -->
-    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
+    <header class="sticky top-0 z-50 bg-black/85 backdrop-blur-xl border-b border-emerald-500/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand / Logo -->
             <a href="#" class="flex items-center gap-3.5 group">
-                <!-- Charge logo.png s'il existe dans le dossier GitHub, sinon affiche le monogramme HP -->
-                <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 p-0.5 shadow-lg shadow-emerald-500/20 flex items-center justify-center overflow-hidden">
+                <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-400 via-teal-600 to-emerald-950 p-0.5 shadow-lg shadow-emerald-500/30 flex items-center justify-center overflow-hidden">
                     <img src="logo.png" alt="Hacena Production Logo" class="w-full h-full object-cover rounded-2xl" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
-                    <div id="fallback-logo" style="display:none;" class="w-full h-full bg-zinc-950 rounded-[14px] items-center justify-center font-display font-black text-lg text-emerald-400 tracking-tighter">
+                    <div id="fallback-logo" style="display:none;" class="w-full h-full bg-zinc-950 rounded-[14px] flex items-center justify-center font-display font-black text-lg text-emerald-400 tracking-tighter">
                         HP
                     </div>
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-display text-xl font-black tracking-wider uppercase leading-none text-white group-hover:text-emerald-400 transition">
+                    <span class="font-display text-xl font-black tracking-wider uppercase text-white group-hover:text-emerald-400 transition leading-none">
                         Hacena <span class="text-emerald-500">Production</span>
                     </span>
                     <span class="text-[11px] text-gray-400 font-medium tracking-widest uppercase mt-1">
-                        × @Lucatonitv
+                        Société Audiovisuelle B2B
                     </span>
                 </div>
             </a>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-gray-300">
-                <a href="#histoire" class="hover:text-emerald-400 transition">L'Histoire</a>
-                <a href="#concepts" class="hover:text-emerald-400 transition">District & Stades Pro</a>
-                <a href="#cinema" class="hover:text-emerald-400 transition">Cinéma & Docu</a>
-                <a href="#galerie" class="hover:text-emerald-400 transition">Galerie Terrain</a>
-                <a href="#recrutement" class="text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-clapperboard text-xs"></i> Stages
-                </a>
+            <!-- Nav Desktop -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-300">
+                <a href="#services" class="hover:text-emerald-400 transition">Nos Prestations Pro</a>
+                <a href="#configurateur" class="text-emerald-400 font-bold hover:text-emerald-300 transition">Simulateur & Devis ⚡</a>
+                <a href="#sports-entreprises" class="hover:text-emerald-400 transition">Clubs & Entreprises</a>
+                <a href="#references" class="hover:text-emerald-400 transition">Références & Presse</a>
+                <a href="#recrutement" class="hover:text-emerald-400 transition">Stages & Équipe</a>
             </nav>
 
-            <!-- Socials + CTA -->
+            <!-- CTA Devis -->
             <div class="hidden sm:flex items-center gap-3">
-                <div class="flex items-center gap-1 pr-2 border-r border-white/10">
-                    <a href="https://www.tiktok.com/@lucatonitv" target="_blank" rel="noopener" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-emerald-500 hover:text-black flex items-center justify-center transition" title="TikTok (112,5K)">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@lucatonitv" target="_blank" rel="noopener" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center transition" title="YouTube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/lucatonitv_/" target="_blank" rel="noopener" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-pink-600 hover:text-white flex items-center justify-center transition" title="Instagram (32,5K)">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-                <a href="#contact" class="bg-emerald-500 hover:bg-emerald-400 text-black font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/25">
-                    Sponsors & Clubs
+                <a href="#configurateur" class="bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-emerald-500/30 flex items-center gap-2">
+                    <i class="fa-solid fa-calculator"></i> Faire un devis
                 </a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="lg:hidden w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-300 hover:text-white">
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="lg:hidden w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-300">
                 <i class="fa-solid fa-bars text-lg"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-zinc-950 border-b border-white/10 px-6 py-5 space-y-4">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-zinc-950 border-b border-emerald-500/20 px-6 py-5 space-y-4">
             <div class="flex flex-col space-y-3 font-semibold text-gray-200">
-                <a href="#histoire" onclick="document.getElementById('mobile-menu').classList.add('hidden')">L'Histoire & Le Teaser</a>
-                <a href="#concepts" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Du District à la Ligue 1</a>
-                <a href="#cinema" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Documentaire Cinéma</a>
-                <a href="#galerie" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Galerie & Coulisses</a>
-                <a href="#recrutement" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="text-emerald-400">Offres de Stages 🎬</a>
-                <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="bg-emerald-500 text-black text-center py-3 rounded-xl font-bold">Nous Contacter</a>
+                <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Nos Prestations Pro</a>
+                <a href="#configurateur" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="text-emerald-400 font-bold">Simulateur & Devis ⚡</a>
+                <a href="#sports-entreprises" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Clubs & Entreprises</a>
+                <a href="#references" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Références & Presse</a>
+                <a href="#recrutement" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Stages & Équipe</a>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative min-h-[90vh] flex items-center justify-center bg-hero-mesh overflow-hidden py-20 px-4 sm:px-6">
-        <!-- Background Image Overlay (Stade LFP / OGC Nice) -->
-        <div class="absolute inset-0 z-0 opacity-25">
-            <img src="1740489497838.jpeg" alt="Lucatoni au micro en Ligue 1" class="w-full h-full object-cover object-center" onerror="this.style.display='none'">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-[#050505] via-transparent to-[#050505]"></div>
+    <!-- HERO SECTION B2B -->
+    <section class="relative min-h-[92vh] flex items-center justify-center bg-wave-da overflow-hidden py-20 px-4 sm:px-6">
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <img src="1740489497838.jpeg" alt="Hacena Production Tournage" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020504] via-[#020504]/80 to-transparent"></div>
         </div>
-        <div class="absolute inset-0 grid-pattern opacity-40 z-0"></div>
 
         <div class="relative z-10 max-w-6xl mx-auto text-center space-y-8">
-            <!-- Badge -->
-            <div class="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold">
-                <span class="px-2 py-0.5 rounded-full bg-emerald-500 text-black font-black text-[10px] uppercase">Bordeaux & France entière</span>
-                <span>Agence de Production Audiovisuelle & Divertissement Sportif</span>
+            <div class="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-semibold shadow-inner">
+                <span class="px-2 py-0.5 rounded-full bg-emerald-500 text-black font-black text-[10px] uppercase">Expertise 4K & Multicaméra</span>
+                <span>Production Audiovisuelle pour Entreprises & Clubs Sportifs</span>
             </div>
 
-            <!-- Main Title -->
-            <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[0.95] uppercase">
-                Faites les choses <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-200 to-emerald-500 text-glow">sérieusement</span>,<br>
-                sans vous prendre au sérieux.
+            <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] uppercase">
+                Donnez vie à vos événements en <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-200 to-emerald-500 text-glow">Haute Qualité</span>, en Live ou en Différé.
             </h1>
 
-            <!-- Subtitle -->
             <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-normal leading-relaxed">
-                De la 10ème division de District en costume-cravate jusqu'au rond central des stades de <strong class="text-white">Ligue 1</strong> et aux salles de <strong class="text-white">cinéma</strong>. <span class="text-emerald-400 font-semibold">Hacena Production × Lucatoni</span> transforme le sport amateur et professionnel en véritable show.
+                Société de production audiovisuelle indépendante. Nous filmons, réalisons et commentons tous vos événements : <strong class="text-white">matchs de football, basket, rugby, tournois ou séminaires d'entreprise</strong> avec un matériel broadcast professionnel.
             </p>
 
-            <!-- Hero Quote / Bio -->
-            <p class="text-sm italic text-gray-400 font-medium">
-                « On n'a qu'une vie, on l'a compris trop vite. » — Luca Martin (@lucatonitv)
-            </p>
-
-            <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#histoire" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold px-8 py-4 rounded-2xl transition shadow-xl shadow-emerald-500/25 text-base">
-                    <i class="fa-solid fa-play"></i> Voir le Teaser & Nos Projets
+                <a href="#configurateur" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold px-8 py-4 rounded-2xl transition shadow-xl shadow-emerald-500/30 text-base">
+                    <i class="fa-solid fa-calculator"></i> Configurer mon projet & Devis immédiat
                 </a>
-                <a href="#inviter" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 glass-card hover:bg-white/10 text-white font-bold px-8 py-4 rounded-2xl transition text-base">
-                    <i class="fa-solid fa-futbol text-emerald-400"></i> Inviter l'équipe / Sponsoriser
+                <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 glass-card hover:bg-white/10 text-white font-bold px-8 py-4 rounded-2xl transition text-base">
+                    <i class="fa-solid fa-video text-emerald-400"></i> Découvrir nos services
                 </a>
             </div>
 
-            <!-- KEY STATS BAR -->
+            <!-- STATS B2B -->
             <div class="pt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                 <div class="glass-card p-5 rounded-2xl text-center">
-                    <div class="font-display text-3xl sm:text-4xl font-black text-emerald-400">+22M</div>
-                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Vues Cumulées (TikTok/Reels/YT)</div>
+                    <div class="font-display text-3xl sm:text-4xl font-black text-emerald-400">4K & HD</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Qualité Broadcast</div>
                 </div>
                 <div class="glass-card p-5 rounded-2xl text-center">
-                    <div class="font-display text-3xl sm:text-4xl font-black text-white">+165K</div>
-                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Abonnés sur les Réseaux</div>
+                    <div class="font-display text-3xl sm:text-4xl font-black text-white">Live / Différé</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Retransmission sur-mesure</div>
                 </div>
                 <div class="glass-card p-5 rounded-2xl text-center">
-                    <div class="font-display text-3xl sm:text-4xl font-black text-emerald-400">4,2M</div>
-                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Mentions J'aime TikTok</div>
+                    <div class="font-display text-3xl sm:text-4xl font-black text-emerald-400">Multisports</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Foot, Basket, Rugby...</div>
                 </div>
                 <div class="glass-card p-5 rounded-2xl text-center">
-                    <div class="font-display text-3xl sm:text-4xl font-black text-white">+3 400 km</div>
-                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Parcourus sur les Terrains</div>
+                    <div class="font-display text-3xl sm:text-4xl font-black text-white">Clés en main</div>
+                    <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold mt-1">Cadrage, Son, Montage</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PRESS & MEDIA MARQUEE -->
-    <div class="py-8 bg-zinc-950 border-y border-white/10 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 mb-4 text-center">
-            <span class="text-[11px] font-bold uppercase tracking-[0.25em] text-gray-500">
-                Ils ont parlé de nos aventures & nous ont fait confiance
-            </span>
-        </div>
+    <!-- MARQUEE CLIENTS & PARTENAIRES -->
+    <div class="py-8 bg-black border-y border-emerald-500/20 overflow-hidden">
         <div class="relative flex overflow-x-hidden">
-            <div class="animate-marquee flex items-center space-x-12 px-6 text-gray-400 font-display font-extrabold text-xl sm:text-2xl uppercase tracking-wider">
-                <span class="flex items-center gap-3 text-white"><i class="fa-solid fa-tv text-emerald-500"></i> BFMTV</span>
+            <div class="animate-marquee flex items-center space-x-12 px-6 text-gray-400 font-display font-extrabold text-lg sm:text-xl uppercase tracking-wider">
+                <span class="text-white flex items-center gap-2"><i class="fa-solid fa-shield-halved text-emerald-500"></i> Clubs de Football</span>
                 <span>•</span>
-                <span class="flex items-center gap-3 text-white"><i class="fa-solid fa-newspaper text-emerald-500"></i> L'ÉQUIPE</span>
+                <span class="text-emerald-400 flex items-center gap-2"><i class="fa-solid fa-basketball text-emerald-500"></i> Clubs de Basket-ball</span>
                 <span>•</span>
-                <span class="flex items-center gap-3 text-white"><i class="fa-solid fa-futbol text-emerald-500"></i> SO FOOT</span>
+                <span class="text-white flex items-center gap-2"><i class="fa-solid fa-football text-emerald-500"></i> Clubs de Rugby</span>
                 <span>•</span>
-                <span class="text-emerald-400">OGC NICE (LIGUE 1)</span>
+                <span class="text-emerald-400">Fédérations & Districts</span>
                 <span>•</span>
-                <span class="text-emerald-400">AS MONACO (STADE LOUIS II)</span>
+                <span class="text-white">Entreprises & Séminaires</span>
                 <span>•</span>
-                <span class="text-white">PAU FC (NOUSTE CAMP)</span>
+                <span>Événements Institutionnels</span>
                 <span>•</span>
-                <span>NRJ BORDEAUX</span>
+                <!-- Loop -->
+                <span class="text-white flex items-center gap-2"><i class="fa-solid fa-shield-halved text-emerald-500"></i> Clubs de Football</span>
                 <span>•</span>
-                <span>EUROPE 2</span>
-                <span>•</span>
-                <span>TV7 BORDEAUX</span>
-                <span>•</span>
-                <span>ICI GIRONDE</span>
-                <span>•</span>
-                <span>MÉRIGNAC CINÉ</span>
-                <span>•</span>
-                <span>PIEDS CARRÉS (TWITCH)</span>
-                <span>•</span>
-                <!-- Duplicate for infinite loop -->
-                <span class="flex items-center gap-3 text-white"><i class="fa-solid fa-tv text-emerald-500"></i> BFMTV</span>
-                <span>•</span>
-                <span class="flex items-center gap-3 text-white"><i class="fa-solid fa-newspaper text-emerald-500"></i> L'ÉQUIPE</span>
-                <span>•</span>
-                <span class="flex items-center gap-3 text-white"><i class="fa-solid fa-futbol text-emerald-500"></i> SO FOOT</span>
-                <span>•</span>
-                <span class="text-emerald-400">OGC NICE (LIGUE 1)</span>
-                <span>•</span>
-                <span class="text-emerald-400">AS MONACO (STADE LOUIS II)</span>
+                <span class="text-emerald-400 flex items-center gap-2"><i class="fa-solid fa-basketball text-emerald-500"></i> Clubs de Basket-ball</span>
             </div>
         </div>
     </div>
 
-    <!-- SECTION 1: L'HISTOIRE & LE TEASER VIDÉO -->
-    <section id="histoire" class="py-24 px-4 sm:px-6 bg-[#050505] relative">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Story Text (7 cols) -->
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-Compass"></i> L'Origine du Projet
-                    </div>
-                    <h2 class="font-display text-4xl sm:text-5xl font-black tracking-tight uppercase leading-none">
-                        4 ANS D'HISTOIRE : <span class="text-emerald-400">D'UN DÉLIRE ENTRE POTES</span> À UNE NOUVELLE ÈRE.
-                    </h2>
-                    <p class="text-gray-300 leading-relaxed">
-                        Il y a 4 ans, quelque part en Gironde, une décision farfelue est prise : débarquer en pleine campagne, <strong class="text-white">en costume-cravate et crampons rouges</strong>, pour commenter un simple match de District en 10ème division française comme une finale de Coupe du Monde.
-                    </p>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Des villages perdus au milieu de nulle part, une table pliante au bord de la main courante, des joueurs amateurs devenus les héros de leur propre histoire le temps d'un dimanche après-midi. Après des dizaines de milliers de kilomètres, des passages sur <strong class="text-gray-200">BFMTV, SoFoot et L'Équipe</strong>, et le départ d'Étienne vers Paris pour ses études, une nouvelle page encore plus ambitieuse s'ouvre aujourd'hui.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                            <div class="text-emerald-400 font-bold text-sm mb-1"><i class="fa-solid fa-shirt mr-1.5"></i> Le Style</div>
-                            <p class="text-xs text-gray-400">Costume-cravate sous la pluie, dans la boue ou au cagnard.</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                            <div class="text-emerald-400 font-bold text-sm mb-1"><i class="fa-solid fa-microphone-lines mr-1.5"></i> Le Ton</div>
-                            <p class="text-xs text-gray-400">Ferveur sud-américaine, humour décalé et respect total des bénévoles.</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                            <div class="text-emerald-400 font-bold text-sm mb-1"><i class="fa-solid fa-medal mr-1.5"></i> Multi-Sports</div>
-                            <p class="text-xs text-gray-400">Football, Rugby, Pétanque : partout où il y a de l'émotion.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Video Player Showcase (6 cols) -->
-                <div class="lg:col-span-6">
-                    <div class="glass-card p-3 sm:p-4 rounded-3xl border border-emerald-500/30 shadow-2xl">
-                        <div class="relative rounded-2xl overflow-hidden bg-zinc-900 aspect-video group">
-                            <!-- Si tu ajoutes ta vidéo teaser nommée teaser.mp4 dans GitHub, elle se lira directement ici ! -->
-                            <video id="teaserVideo" class="w-full h-full object-cover" controls poster="DSCF5574.jpg">
-                                <source src="teaser.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la lecture vidéo.
-                            </video>
-                            <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[11px] font-bold text-emerald-400 border border-emerald-500/30 pointer-events-none">
-                                <i class="fa-solid fa-film mr-1"></i> TEASER OFFICIEL — LE RENOUVEAU
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 px-2">
-                            <div>
-                                <h3 class="font-bold text-sm text-white">« Il y a 4 ans, quelque part en Gironde... »</h3>
-                                <p class="text-xs text-gray-400">Découvrez la genèse et l'appel aux clubs dans toute la France.</p>
-                            </div>
-                            <a href="https://www.tiktok.com/@lucatonitv" target="_blank" rel="noopener" class="text-xs bg-white/10 hover:bg-emerald-500 hover:text-black text-white font-bold px-4 py-2 rounded-xl transition">
-                                Voir sur TikTok <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 2: DU DISTRICT AUX STADES DE LIGUE 1 & LIGUE 2 -->
-    <section id="concepts" class="py-24 px-4 sm:px-6 bg-zinc-950 border-t border-white/5">
+    <!-- SECTION 1: NOS PRESTATIONS PROFESSIONNELLES -->
+    <section id="services" class="py-24 px-4 sm:px-6 bg-[#020504] relative">
         <div class="max-w-7xl mx-auto space-y-16">
-            
             <div class="text-center max-w-3xl mx-auto space-y-4">
-                <span class="text-emerald-400 font-bold text-xs tracking-widest uppercase">Nos Réalisations & Preuves Terrain</span>
+                <span class="text-emerald-400 font-bold text-xs tracking-widest uppercase">Savoir-Faire Audiovisuel</span>
                 <h2 class="font-display text-4xl sm:text-6xl font-black uppercase">
-                    ENTRE LE FOOT AMATEUR ET PRO, <span class="text-emerald-400">IL N'Y A QU'UN PAS.</span>
+                    UNE OFFRE COMPLÈTE POUR <span class="text-emerald-400">LES PROFESSIONNELS</span>
                 </h2>
-                <p class="text-gray-400">
-                    Notre force : savoir installer une table pliante en D4 le dimanche matin, et prendre le micro devant 25 000 personnes en Ligue 1 le week-end suivant.
+                <p class="text-gray-400 text-sm sm:text-base">
+                    Que vous soyez un club sportif professionnel ou amateur, une collectivité ou une entreprise, nous concevons des contenus vidéo percutants.
                 </p>
-            </div>
-
-            <!-- FEATURED CASE STUDY: OGC NICE (ALLIANZ RIVIERA) -->
-            <div class="glass-card rounded-3xl overflow-hidden border border-emerald-500/30">
-                <div class="grid grid-cols-1 lg:grid-cols-12">
-                    <div class="lg:col-span-7 relative min-h-[340px] bg-black">
-                        <video class="w-full h-full object-cover" controls poster="1740489497838.jpeg">
-                            <source src="ogcnice.mp4" type="video/mp4">
-                        </video>
-                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-black uppercase px-3 py-1 rounded-lg shadow-lg pointer-events-none">
-                            Ligue 1 • OGC Nice
-                        </div>
-                    </div>
-                    <div class="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between space-y-6">
-                        <div class="space-y-4">
-                            <div class="flex items-center justify-between text-xs text-emerald-400 font-bold uppercase tracking-wider">
-                                <span>Allianz Riviera • Nice</span>
-                                <span>Accréditation LFP</span>
-                            </div>
-                            <h3 class="font-display text-2xl sm:text-3xl font-black text-white uppercase leading-tight">
-                                Speaker au Rond Central & Fan-Zone à l'OGC Nice
-                            </h3>
-                            <p class="text-gray-300 text-sm leading-relaxed">
-                                Invité par l'<strong>OGC Nice</strong> pour mettre à l'honneur les clubs régionaux : création et animation d'un stand de commentateur sur le parvis du stade avec les supporters, puis prise du micro au rond central avec le speaker officiel pour commenter le <em>Challenge Gym Avni</em> à la mi-temps (Fréjus Saint-Raphaël vs Blausasc).
-                            </p>
-                            <ul class="space-y-2 text-xs text-gray-400 pt-2">
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Animation Fan-Zone & casting d'un abonné pour commenter en District à Antibes</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Captation bord pelouse sous dossard officiel LFP (avec Otto TV)</li>
-                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Vlog immersif diffusé sur YouTube</li>
-                            </ul>
-                        </div>
-                        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
-                            <span class="text-xs text-gray-400 italic">« 10-10, pas de gagnant, que des gagnants ! »</span>
-                            <a href="https://www.youtube.com/@lucatonitv" target="_blank" rel="noopener" class="text-emerald-400 hover:text-emerald-300 text-sm font-bold flex items-center gap-1.5">
-                                Voir le Vlog complet <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4 OTHER MAJOR ACHIEVEMENTS GRID -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- Card 1: AS Monaco -->
-                <div class="glass-card p-7 rounded-2xl flex flex-col justify-between space-y-5">
-                    <div class="space-y-3">
-                        <span class="inline-block px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-[11px] font-bold uppercase">
-                            Stade Louis II • 5M Abonnés
-                        </span>
-                        <h4 class="font-display text-xl font-black uppercase">Derby de la Côte d'Azur avec l'AS Monaco</h4>
-                        <p class="text-gray-400 text-xs leading-relaxed">
-                            Commentaire en direct du derby <strong>AS Monaco vs OGC Nice</strong> sur le compte TikTok officiel de l'AS Monaco depuis le Stade Louis II + Match des célébrités avec <strong>Gaël Monfils</strong> au Centre de Performance.
-                        </p>
-                    </div>
-                    <div class="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider">
-                        <i class="fa-solid fa-bolt mr-1"></i> Live TikTok Officiel ASM
-                    </div>
-                </div>
-
-                <!-- Card 2: Stade Bordelais & Steve Savidan -->
-                <div class="glass-card p-7 rounded-2xl flex flex-col justify-between space-y-5">
-                    <div class="space-y-3">
-                        <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[11px] font-bold uppercase">
-                            Légende Équipe de France
-                        </span>
-                        <h4 class="font-display text-xl font-black uppercase">Match commenté avec Steve Savidan</h4>
-                        <p class="text-gray-400 text-xs leading-relaxed">
-                            Matinée polaire en Gironde pour commenter le Stade Bordelais face au Bacchus Bordeaux Club avec l'ex-buteur de Ligue 1 <strong>« Savigoal »</strong> en N°9. Partage, apéro et adoubement officiel du concept.
-                        </p>
-                    </div>
-                    <div class="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider">
-                        <i class="fa-solid fa-quote-left mr-1"></i> Validé par Steve Savidan
-                    </div>
-                </div>
-
-                <!-- Card 3: Nouste Camp Ligue 2 -->
-                <div class="glass-card p-7 rounded-2xl flex flex-col justify-between space-y-5">
-                    <div class="space-y-3">
-                        <span class="inline-block px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[11px] font-bold uppercase">
-                            Stade de Ligue 2 • Pau
-                        </span>
-                        <h4 class="font-display text-xl font-black uppercase">Finales District au Nouste Camp (64)</h4>
-                        <p class="text-gray-400 text-xs leading-relaxed">
-                            Invité par le <strong>District des Pyrénées-Atlantiques</strong> pour couvrir les finales des Coupes Dargains et Vispaly dans l'enceinte du Pau FC. Mise en avant décalée des arbitres et des sponsors (Ogeu Groupe, Sarthou SAS).
-                        </p>
-                    </div>
-                    <div class="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider">
-                        <i class="fa-solid fa-chart-line mr-1"></i> +25 000 vues sur YouTube
-                    </div>
-                </div>
-
-                <!-- Card 4: Live Twitch PiedsCarrés -->
-                <div class="glass-card p-7 rounded-2xl flex flex-col justify-between space-y-5">
-                    <div class="space-y-3">
-                        <span class="inline-block px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-[11px] font-bold uppercase">
-                            Twitch • Événementiel
-                        </span>
-                        <h4 class="font-display text-xl font-black uppercase">Live Twitch devant 10 000 Spectateurs</h4>
-                        <p class="text-gray-400 text-xs leading-relaxed">
-                            Commentaire en direct toute la soirée sur la chaîne de <strong>PiedsCarrés</strong> devant 10 000 viewers simultanés aux côtés d'invités de prestige (<strong>Doigby, Prime, Sacha Borg</strong>).
-                        </p>
-                    </div>
-                    <div class="text-[11px] font-semibold text-emerald-400 uppercase tracking-wider">
-                        <i class="fa-brands fa-twitch mr-1"></i> 10 000 Viewers en Direct
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 3: CINÉMA & DOCUMENTAIRE -->
-    <section id="cinema" class="py-24 px-4 sm:px-6 bg-custom-gradient relative overflow-hidden border-t border-white/10">
-        <div class="max-w-7xl mx-auto">
-            <div class="glass-card rounded-3xl p-8 sm:p-14 border border-emerald-500/40 relative overflow-hidden">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                    <div class="lg:col-span-7 space-y-6">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold uppercase">
-                            <i class="fa-solid fa-Popcorn"></i> Production Cinéma & Aventure Humaine
-                        </div>
-                        <h2 class="font-display text-3xl sm:text-5xl font-black uppercase leading-none">
-                            « ARCACHON - BIARRITZ PAR LA PLAGE » : <span class="text-emerald-400">UN SIMPLE DÉLIRE</span> SUR GRAND ÉCRAN.
-                        </h2>
-                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
-                            200 kilomètres à pied par le sable entre Arcachon et Biarritz avec Rayan Herry. Pas de matelas, pas de confort, deux sacs à dos et une caméra. Un film documentaire en auto-production pure qui a nécessité plus de deux mois de montage acharné.
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                            <div class="bg-black/40 p-4 rounded-2xl border border-white/10">
-                                <div class="text-2xl font-display font-black text-emerald-400">N°1 au Box-Office Local</div>
-                                <p class="text-xs text-gray-400 mt-1">Avant-première au <strong>Mérignac Ciné</strong> : plus d'entrées que tous les autres films à l'affiche ce soir-là !</p>
-                            </div>
-                            <div class="bg-black/40 p-4 rounded-2xl border border-white/10">
-                                <div class="text-2xl font-display font-black text-white">Tournée Médias</div>
-                                <p class="text-xs text-gray-400 mt-1">Soutenu par NRJ Bordeaux, Europe 2, Wit FM, Forever, ICI Gironde & TV7 Bordeaux.</p>
-                            </div>
-                        </div>
-                        <div class="pt-2">
-                            <a href="https://www.youtube.com/@lucatonitv" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-white text-black hover:bg-emerald-400 font-extrabold px-7 py-3.5 rounded-xl transition text-sm">
-                                <i class="fa-brands fa-youtube text-red-600 text-lg"></i> Regarder le documentaire sur YouTube
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="lg:col-span-5 flex flex-col gap-4">
-                        <div class="relative rounded-2xl overflow-hidden border border-white/15 shadow-2xl">
-                            <img src="1740489591140.jpeg" alt="Luca Martin au micro" class="w-full h-80 object-cover object-top" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=800&q=80'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
-                                <span class="text-xs font-bold text-emerald-400 uppercase">Luca Martin • Réalisateur & Commentateur</span>
-                                <p class="text-sm font-semibold text-white mt-1">« La vie est un jeu : on est là pour vivre des expériences, faire du show et raconter de vraies histoires. »</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 4: GALERIE PHOTOS (L'ADN TERRAIN) -->
-    <section id="galerie" class="py-24 px-4 sm:px-6 bg-[#050505] border-t border-white/10">
-        <div class="max-w-7xl mx-auto space-y-12">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div>
-                    <span class="text-emerald-400 font-bold text-xs tracking-widest uppercase">En Immersion</span>
-                    <h2 class="font-display text-4xl sm:text-5xl font-black uppercase mt-2">
-                        LA GALERIE <span class="text-emerald-400">TOUT-TERRAIN</span>
-                    </h2>
-                </div>
-                <p class="text-gray-400 text-sm max-w-md">
-                    Costume-cravate, crampons rouges, table pliante en District ou pelouse de Ligue 1 sous la pluie : retour en images sur notre quotidien.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <!-- Photo 1: L'arrivée en costume et crampons rouges (DSC08450.jpg) -->
-                <div class="md:col-span-4 glass-card rounded-3xl overflow-hidden group relative min-h-[380px]">
-                    <img src="DSC08450.jpg" alt="Arrivée en costume et crampons rouges avec l'équipe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
-                        <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">Dress Code Officiel</span>
-                        <h3 class="font-display text-xl font-bold text-white">Costume-cravate, crampons rouges & escouade</h3>
-                    </div>
-                </div>
-
-                <!-- Photo 2: La table de régie en District (DSCF5574.jpg) -->
-                <div class="md:col-span-8 glass-card rounded-3xl overflow-hidden group relative min-h-[380px]">
-                    <img src="DSCF5574.jpg" alt="Table de commentateur au bord du terrain de district" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
-                        <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">Le Tour de France du District</span>
-                        <h3 class="font-display text-2xl font-bold text-white">La régie au bord de la main courante : proximité, ferveur & authenticité</h3>
-                    </div>
-                </div>
-
-                <!-- Photo 3: Bannière Ligue 1 LFP (1740489497838.jpeg) -->
-                <div class="md:col-span-8 glass-card rounded-3xl overflow-hidden group relative min-h-[320px]">
-                    <img src="1740489497838.jpeg" alt="Pelouse Ligue 1 devant la caméra LFP" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
-                        <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">Ligue 1 • Allianz Riviera</span>
-                        <h3 class="font-display text-2xl font-bold text-white">Au micro sur la pelouse devant les caméras de la LFP</h3>
-                    </div>
-                </div>
-
-                <!-- Photo 4: Portrait Micro (1740489591140.jpeg) -->
-                <div class="md:col-span-4 glass-card rounded-3xl overflow-hidden group relative min-h-[320px]">
-                    <img src="1740489591140.jpeg" alt="Luca Martin au micro en direct" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
-                        <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">Dopamine Pure</span>
-                        <h3 class="font-display text-xl font-bold text-white">Speaker & Commentateur Live</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5: NOS PRESTATIONS B2B (CLUBS, DISTRICTS, MARQUES) -->
-    <section class="py-24 px-4 sm:px-6 bg-zinc-950 border-t border-white/10">
-        <div class="max-w-7xl mx-auto space-y-12">
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Offres & Savoir-Faire</span>
-                <h2 class="font-display text-3xl sm:text-5xl font-black uppercase">CE QUE NOUS PRODUISONS POUR VOUS</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="glass-card p-8 rounded-3xl space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-bullhorn"></i>
+                <!-- Prestation 1 -->
+                <div class="glass-card p-8 rounded-3xl space-y-5 border border-emerald-500/30 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl shadow-inner">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold">Captation Live & Streaming 4K</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Retransmission en direct multi-caméras de vos matchs (basket, rugby, foot) ou événements d'entreprise sur vos plateformes ou réseaux sociaux avec habillage graphique personnalisé.
+                        </p>
                     </div>
-                    <h3 class="font-display text-2xl font-bold">Activation Stades & Clubs Pros</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Animations parvis / Fan-Zone, speaker mi-temps, vlogs coulisses immersifs et création de contenus TikTok/Reels pour engager la jeune génération (comme réalisé avec l'OGC Nice et l'AS Monaco).
-                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300 pt-2 border-t border-white/10">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Caméras 4K & optiques professionnelles</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Réalisation en direct (régie mobile)</li>
+                    </ul>
                 </div>
 
-                <div class="glass-card p-8 rounded-3xl space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-trophy"></i>
+                <!-- Prestation 2 -->
+                <div class="glass-card p-8 rounded-3xl space-y-5 border border-emerald-500/30 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl shadow-inner">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold">Commentateurs & Animation Live</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Mettez du show dans vos rencontres ! Des commentateurs passionnés et professionnels pour dynamiser vos matchs, interviewer les joueurs et animer vos avant-matchs.
+                        </p>
                     </div>
-                    <h3 class="font-display text-2xl font-bold">Rayonnement Districts & Ligues</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Couverture décalée et bienveillante de vos finales départementales ou régionales, valorisation des bénévoles, des arbitres et intégration native de vos sponsors locaux.
-                    </p>
+                    <ul class="space-y-2 text-xs text-gray-300 pt-2 border-t border-white/10">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Voix pro & dynamisme garanti</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Micros HF & matériel son broadcast</li>
+                    </ul>
                 </div>
 
-                <div class="glass-card p-8 rounded-3xl space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-video"></i>
+                <!-- Prestation 3 -->
+                <div class="glass-card p-8 rounded-3xl space-y-5 border border-emerald-500/30 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl shadow-inner">
+                            <i class="fa-solid fa-clapperboard"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold">Montage & Aftermovie Différé</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Besoin d'un résumé spectaculaire ou d'un film promotionnel pour votre club ou votre entreprise ? Nous réalisons le montage rythmé adapté aux réseaux sociaux (TikTok, Reels, YouTube).
+                        </p>
                     </div>
-                    <h3 class="font-display text-2xl font-bold">Production Documentaire & Brand Content</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        De la conception au montage final : séries web, défis extrêmes, road-trips sponsorisés et documentaires projetés au cinéma ou diffusés sur YouTube.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 6: RECRUTEMENT & STAGES -->
-    <section id="recrutement" class="py-24 px-4 sm:px-6 bg-[#050505] border-t border-white/10">
-        <div class="max-w-5xl mx-auto space-y-12">
-            <div class="text-center space-y-4">
-                <span class="text-emerald-400 font-bold text-xs tracking-widest uppercase">Rejoins l'Équipe Hacena Prod</span>
-                <h2 class="font-display text-3xl sm:text-5xl font-black uppercase">OFFRES DE STAGES & COLLABORATIONS</h2>
-                <p class="text-gray-400 max-w-xl mx-auto text-sm">
-                    Basés à Bordeaux avec des tournages partout en France, nous cherchons des passionnés prêts à vivre des aventures hors normes sur le terrain.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="glass-card p-8 rounded-3xl space-y-4 border border-emerald-500/25">
-                    <div class="flex justify-between items-center">
-                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Bordeaux / Hybride</span>
-                        <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold">Recrutement Ouvert</span>
-                    </div>
-                    <h3 class="font-display text-2xl font-bold">Monteur Vidéo / Post-Réalisateur</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Montage dynamique des formats longs YouTube (vlogs stades, Tour de France du District) et déclinaison en formats courts ultra-rythmés pour TikTok (112K) et Reels (32K).
-                    </p>
-                    <a href="#contact" onclick="document.getElementById('sujet-select').value='Candidature Stage (Montage / Cadrage)'" class="inline-flex items-center gap-2 text-emerald-400 font-bold text-sm hover:underline pt-2">
-                        Postuler maintenant &rarr;
-                    </a>
-                </div>
-
-                <div class="glass-card p-8 rounded-3xl space-y-4 border border-emerald-500/25">
-                    <div class="flex justify-between items-center">
-                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Terrain & Déplacements France</span>
-                        <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold">Recrutement Ouvert</span>
-                    </div>
-                    <h3 class="font-display text-2xl font-bold">Cadreur / Opérateur Caméra</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Captation de matchs, réactions en bord de touche, prise de son micro HF et suivi des road-trips sportifs en conditions réelles (stades amateurs et pros).
-                    </p>
-                    <a href="#contact" onclick="document.getElementById('sujet-select').value='Candidature Stage (Montage / Cadrage)'" class="inline-flex items-center gap-2 text-emerald-400 font-bold text-sm hover:underline pt-2">
-                        Postuler maintenant &rarr;
-                    </a>
+                    <ul class="space-y-2 text-xs text-gray-300 pt-2 border-t border-white/10">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Formats courts & institutionnels</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Post-production haut de gamme</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 7: FORMULAIRE D'INVITATION CLUB & CONTACT SPONSORING -->
-    <section id="inviter" class="py-24 px-4 sm:px-6 bg-hero-mesh border-t border-emerald-500/20">
-        <div id="contact" class="max-w-4xl mx-auto glass-card p-8 sm:p-12 rounded-3xl border border-emerald-500/40 shadow-2xl space-y-8">
+    <!-- SECTION 2: CONFIGURATEUR & SIMULATEUR DE DEVIS PRO -->
+    <section id="configurateur" class="py-24 px-4 sm:px-6 bg-zinc-950 border-t border-white/10 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto glass-card p-8 sm:p-12 rounded-3xl border border-emerald-500/50 shadow-2xl space-y-8 relative z-10">
             <div class="text-center space-y-3">
-                <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase">
-                    Football • Rugby • Pétanque • Marques & Sponsors
-                </span>
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-bolt"></i> Simulateur Instantané
+                </div>
                 <h2 class="font-display text-3xl sm:text-5xl font-black uppercase">
-                    INVITEZ-NOUS DANS VOTRE CLUB OU DEVENEZ PARTENAIRE
+                    CONFIGUREZ VOTRE PROJET & OBTENEZ UN DEVIS
                 </h2>
                 <p class="text-gray-300 text-sm max-w-xl mx-auto">
-                    Vous connaissez le club idéal où l'ambiance est incomparable ? Vous êtes une marque, un district ou un club pro ? Écrivez-nous directement à <a href="mailto:lucatoniprod@gmail.com" class="text-emerald-400 underline font-bold">lucatoniprod@gmail.com</a> ou via ce formulaire.
+                    Sélectionnez vos critères ci-dessous. Notre équipe vous recontacte rapidement avec une proposition tarifaire sur-mesure.
                 </p>
             </div>
 
-            <form action="mailto:lucatoniprod@gmail.com" method="post" enctype="text/plain" class="space-y-6">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="space-y-2">
-                        <label class="text-xs font-bold text-gray-300 uppercase tracking-wider">Votre Nom / Club / Entreprise *</label>
-                        <input type="text" name="Nom_Structure" required class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="ex: FC District / District 64 / Marque">
-                    </div>
-                    <div class="space-y-2">
-                        <label class="text-xs font-bold text-gray-300 uppercase tracking-wider">Votre Email ou Téléphone *</label>
-                        <input type="text" name="Contact" required class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="votre@email.fr ou 06...">
+            <!-- FORMULAIRE / CONFIGURATEUR INTERACTIF -->
+            <form action="mailto:lucatoniprod@gmail.com" method="post" enctype="text/plain" class="space-y-8 pt-4">
+                
+                <!-- ÉTAPE 1 : Type de projet -->
+                <div class="space-y-3">
+                    <label class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-2">
+                        <span>1. Type d'événement / Secteur</span>
+                    </label>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <label class="glass-card p-4 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-3 transition">
+                            <input type="radio" name="Secteur" value="Club de Sport" required class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">🏟️ Club de Sport (Match / Tournoi)</span>
+                        </label>
+                        <label class="glass-card p-4 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-3 transition">
+                            <input type="radio" name="Secteur" value="Entreprise / Séminaire" class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">💼 Entreprise / Séminaire</span>
+                        </label>
+                        <label class="glass-card p-4 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-3 transition">
+                            <input type="radio" name="Secteur" value="Autre événement" class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">✨ Autre Événement</span>
+                        </label>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- ÉTAPE 2 : Sport ou Discipline -->
+                <div class="space-y-3">
+                    <label class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-2">
+                        <span>2. Discipline / Thématique</span>
+                    </label>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <label class="glass-card p-3.5 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-2.5 transition">
+                            <input type="radio" name="Discipline" value="Football" required class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">⚽ Football</span>
+                        </label>
+                        <label class="glass-card p-3.5 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-2.5 transition">
+                            <input type="radio" name="Discipline" value="Basket-ball" class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">🏀 Basket-ball</span>
+                        </label>
+                        <label class="glass-card p-3.5 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-2.5 transition">
+                            <input type="radio" name="Discipline" value="Rugby" class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">🏉 Rugby</span>
+                        </label>
+                        <label class="glass-card p-3.5 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-2.5 transition">
+                            <input type="radio" name="Discipline" value="Autre Sport / Entreprise" class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">🎯 Autre / Entreprise</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ÉTAPE 3 : Format de Diffusion -->
+                <div class="space-y-3">
+                    <label class="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-2">
+                        <span>3. Format de Retransmission</span>
+                    </label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <label class="glass-card p-4 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-3 transition">
+                            <input type="radio" name="Format" value="Live Streaming en direct" required class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">🔴 Live Streaming (Retransmission en direct)</span>
+                        </label>
+                        <label class="glass-card p-4 rounded-xl cursor-pointer hover:border-emerald-500 flex items-center gap-3 transition">
+                            <input type="radio" name="Format" value="Différé / Aftermovie / Montage" class="accent-emerald-500 w-4 h-4">
+                            <span class="text-sm font-semibold">🎬 Tournage & Montage en Différé (Aftermovie)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ÉTAPE 4 : Coordonnées -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                     <div class="space-y-2">
-                        <label class="text-xs font-bold text-gray-300 uppercase tracking-wider">Objet de la demande *</label>
-                        <select id="sujet-select" name="Objet" class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm">
-                            <option value="Invitation Club (Foot, Rugby, Pétanque...)">⚽ Inviter Lucatoni à commenter notre club</option>
-                            <option value="Sponsoring & Partenariat Marque">🤝 Sponsoring & Partenariat Commercial</option>
-                            <option value="Prestation Club Pro / Ligue / District">🏟️ Animation Stade Pro / Finale de District</option>
-                            <option value="Candidature Stage (Montage / Cadrage)">🎬 Candidature Stage (Montage / Cadrage)</option>
-                            <option value="Autre demande">📩 Autre demande</option>
-                        </select>
+                        <label class="text-xs font-bold text-gray-300 uppercase">Nom de votre structure / Club *</label>
+                        <input type="text" name="Structure" required class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="ex: JSA Bordeaux Basket / Nom de l'entreprise">
                     </div>
                     <div class="space-y-2">
-                        <label class="text-xs font-bold text-gray-300 uppercase tracking-wider">Ville / Département</label>
-                        <input type="text" name="Localisation" class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="ex: Bordeaux (33), Pau (64), Vendée...">
+                        <label class="text-xs font-bold text-gray-300 uppercase">Email ou Téléphone pro *</label>
+                        <input type="text" name="Contact" required class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="contact@club.fr ou 06...">
                     </div>
                 </div>
 
                 <div class="space-y-2">
-                    <label class="text-xs font-bold text-gray-300 uppercase tracking-wider">Racontez-nous votre histoire ou votre projet *</label>
-                    <textarea name="Message" rows="4" required class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="Décrivez l'ambiance de votre club, la date du match ou votre proposition de partenariat..."></textarea>
+                    <label class="text-xs font-bold text-gray-300 uppercase">Précisions sur votre projet (Date, lieu, besoins spécifiques)</label>
+                    <textarea name="Commentaires" rows="3" class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="Indiquez la date souhaitée, le lieu, et si vous avez besoin de commentateurs..."></textarea>
                 </div>
 
-                <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
-                    <button type="submit" class="w-full sm:flex-1 bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold py-4 rounded-xl transition shadow-lg shadow-emerald-500/25 text-base">
-                        <i class="fa-solid fa-paper-plane mr-2"></i> Envoyer ma demande
-                    </button>
-                    <a href="mailto:lucatoniprod@gmail.com" class="w-full sm:w-auto text-center px-6 py-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-gray-300 transition">
-                        Ou écrire à lucatoniprod@gmail.com
-                    </a>
-                </div>
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold py-4 rounded-xl transition shadow-xl shadow-emerald-500/30 text-base">
+                    <i class="fa-solid fa-paper-plane mr-2"></i> Envoyer ma demande de devis professionnel
+                </button>
             </form>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CLUBS & ENTREPRISES (VALEURS & QUALITÉ) -->
+    <section id="sports-entreprises" class="py-24 px-4 sm:px-6 bg-[#020504]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-emerald-400 font-bold text-xs tracking-widest uppercase">Pourquoi Hacena Production ?</span>
+                <h2 class="font-display text-4xl sm:text-5xl font-black uppercase leading-none">
+                    L'EXCELLENCE AUDIOVISUELLE AU SERVICE DE <span class="text-emerald-400">VOS ENJEUX</span>
+                </h2>
+                <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+                    Que vous souhaitiez professionnaliser la visibilité de votre club de sport (football, basket, rugby) pour attirer de nouveaux sponsors, ou valoriser un événement d'entreprise, nous mettons notre expertise broadcast à votre disposition.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-white/5 p-4 rounded-2xl border border-white/10">
+                        <div class="text-emerald-400 font-bold text-base mb-1"><i class="fa-solid fa-shield-halved mr-2"></i> Image de Marque</div>
+                        <p class="text-xs text-gray-400">Valorisez vos partenaires et vos matchs avec une qualité d'image irréprochable.</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-2xl border border-white/10">
+                        <div class="text-emerald-400 font-bold text-base mb-1"><i class="fa-solid fa-bolt mr-2"></i> Réactivité & Mobilité</div>
+                        <p class="text-xs text-gray-400">Une équipe autonome, mobile partout en France avec du matériel de pointe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="DSC08450.jpg" alt="Tournage terrain" class="rounded-2xl object-cover h-64 w-full shadow-lg border border-white/10" onerror="this.src='https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=800&q=80'">
+                        <img src="1740489497838.jpeg" alt="Captation pro" class="rounded-2xl object-cover h-48 w-full shadow-lg border border-white/10" onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80'">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="DSCF5574.jpg" alt="Régie live" class="rounded-2xl object-cover h-48 w-full shadow-lg border border-white/10" onerror="this.src='https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80'">
+                        <img src="1740489591140.jpeg" alt="Intervention micro" class="rounded-2xl object-cover h-64 w-full shadow-lg border border-white/10" onerror="this.src='https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: RÉFÉRENCES & RECONNAISSANCE MÉDIA -->
+    <section id="references" class="py-24 px-4 sm:px-6 bg-zinc-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Ils parlent de notre savoir-faire</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-black uppercase">EXPÉRIENCE & MÉDIAS</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-7 rounded-3xl space-y-4 border border-emerald-500/25">
+                    <span class="text-xs font-black uppercase text-red-500 bg-red-500/10 px-3 py-1 rounded-full">L'Équipe</span>
+                    <h3 class="font-display text-xl font-bold">Portrait National</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Mise en avant de notre rigueur et de notre capacité à couvrir des événements sportifs avec le standard des plus grandes chaînes[cite: 10].
+                    </p>
+                </div>
+                <div class="glass-card p-7 rounded-3xl space-y-4 border border-emerald-500/25">
+                    <span class="text-xs font-black uppercase text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full">BFMTV</span>
+                    <h3 class="font-display text-xl font-bold">Reportage TV</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Immersion dans nos processus de tournage et notre maîtrise de la retransmission vidéo sur le terrain[cite: 11].
+                    </p>
+                </div>
+                <div class="glass-card p-7 rounded-3xl space-y-4 border border-emerald-500/25">
+                    <span class="text-xs font-black uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full">Stades Pro (L1 / L2)</span>
+                    <h3 class="font-display text-xl font-bold">Prestations Officielles</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Interventions aux côtés de l'OGC Nice, l'AS Monaco et le Pau FC pour des animations grand public et retransmissions[cite: 2].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION RECRUTEMENT / STAGES -->
+    <section id="recrutement" class="py-24 px-4 sm:px-6 bg-[#020504] border-t border-white/10">
+        <div class="max-w-4xl mx-auto space-y-8 text-center">
+            <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Carrières & Alternances</span>
+            <h2 class="font-display text-3xl sm:text-5xl font-black uppercase">REJOIGNEZ NOTRE STRUCTURE</h2>
+            <p class="text-gray-400 text-sm max-w-xl mx-auto">
+                Vous êtes étudiant en audiovisuel, monteur ou cadreur passionné ? Hacena Production recrute ses futurs talents pour des tournages en conditions réelles.
+            </p>
+            <div class="pt-2">
+                <a href="mailto:lucatoniprod@gmail.com" class="inline-flex items-center gap-2 bg-white/10 hover:bg-emerald-500 hover:text-black text-white font-bold px-8 py-3.5 rounded-xl transition text-sm">
+                    <i class="fa-solid fa-envelope">></i> Envoyer une candidature spontanée
+                </a>
+            </div>
         </div>
     </section>
 
@@ -722,40 +497,31 @@
             <div class="space-y-4 md:col-span-2">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-xl bg-emerald-500 flex items-center justify-center font-display font-black text-black">HP</div>
-                    <span class="font-display text-lg font-black text-white uppercase">Hacena Production × Lucatoni</span>
+                    <span class="font-display text-lg font-black text-white uppercase">Hacena Production</span>
                 </div>
                 <p class="text-xs text-gray-500 max-w-sm leading-relaxed">
-                    Agence de production audiovisuelle, création de contenus sportifs & médias. Fondé à Bordeaux, Nouvelle-Aquitaine. « Faites les choses sérieusement, sans vous prendre au sérieux. »
-                </p>
-                <p class="text-xs text-emerald-400 font-semibold">
-                    Contact Pro : <a href="mailto:lucatoniprod@gmail.com" class="underline">lucatoniprod@gmail.com</a>
+                    Société de production audiovisuelle B2B. Captation 4K, multicaméra, live streaming et reportages sportifs et d'entreprise. Bordeaux, France.
                 </p>
             </div>
-
             <div class="space-y-3">
-                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Navigation</h4>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Navigation Pro</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="#histoire" class="hover:text-emerald-400 transition">Notre Histoire & Teaser</a></li>
-                    <li><a href="#concepts" class="hover:text-emerald-400 transition">Stades Pro & District</a></li>
-                    <li><a href="#cinema" class="hover:text-emerald-400 transition">Documentaire Cinéma</a></li>
-                    <li><a href="#recrutement" class="hover:text-emerald-400 transition">Recrutement & Stages</a></li>
+                    <li><a href="#services" class="hover:text-emerald-400 transition">Prestations Audiovisuelles</a></li>
+                    <li><a href="#configurateur" class="hover:text-emerald-400 transition">Simulateur & Devis</a></li>
+                    <li><a href="#sports-entreprises" class="hover:text-emerald-400 transition">Clubs & Entreprises</a></li>
+                    <li><a href="#references" class="hover:text-emerald-400 transition">Références Médias</a></li>
                 </ul>
             </div>
-
             <div class="space-y-3">
-                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Réseaux Officiels (@lucatonitv)</h4>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider">Contact & Devis</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="https://www.tiktok.com/@lucatonitv" target="_blank" rel="noopener" class="hover:text-emerald-400 transition"><i class="fa-brands fa-tiktok w-5"></i> TikTok (112,5K abonnés)</a></li>
-                    <li><a href="https://www.instagram.com/lucatonitv_/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition"><i class="fa-brands fa-instagram w-5"></i> Instagram (32,5K abonnés)</a></li>
-                    <li><a href="https://www.youtube.com/@lucatonitv" target="_blank" rel="noopener" class="hover:text-emerald-400 transition"><i class="fa-brands fa-youtube w-5"></i> YouTube (Lucatoni)</a></li>
-                    <li><a href="https://www.linkedin.com/in/luca-martin/" target="_blank" rel="noopener" class="hover:text-emerald-400 transition"><i class="fa-brands fa-linkedin w-5"></i> LinkedIn (Luca Martin)</a></li>
+                    <li><a href="mailto:lucatoniprod@gmail.com" class="hover:text-emerald-400 transition"><i class="fa-solid fa-envelope mr-1.5"></i> lucatoniprod@gmail.com</a></li>
+                    <li><span><i class="fa-solid fa-location-dot mr-1.5"></i> Bordeaux & France entière</span></li>
                 </ul>
             </div>
         </div>
-
-        <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-600 gap-4">
-            <p>&copy; 2026 Hacena Production & Lucatoni. Tous droits réservés. Bordeaux, France.</p>
-            <p>Conçu sur-mesure pour le sport avec passion.</p>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 text-center text-xs text-gray-600">
+            <p>&copy; 2026 Hacena Production. Tous droits réservés. Société de production audiovisuelle indépendante.</p>
         </div>
     </footer>
 
